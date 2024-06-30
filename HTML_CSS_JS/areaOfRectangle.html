@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area(){
+            var length, breadth, area;
+            length = parseInt(document.getElementById("length").value);
+            breadth = parseInt(document.getElementById("breadth").value);
+            area = length * breadth;
+            document.getElementById("answer").value = area;
+        }
+    </script>
+</head>
+<body>
+    <p>Enter the Length: <input type="text" id="length"></p>
+    <p>Enter the breadth: <input type="text" id="breadth"></p>
+    <button onclick="area()">Area of Rectangle</button>
+    <p>Area: <input id="answer"></p>
+</body>
+</html>

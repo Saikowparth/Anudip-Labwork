@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+        body {
+            background-color: #f4f4f2;
+            background-image: url(restaurantBg3.jpg);
+            background-repeat: no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .navBar {
+            text-decoration: none;
+        }
+
+        .ulnavBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d2d2d;
+            position: sticky;
+        }
+
+        .navBar {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            color: #f4f4f2;
+            text-align: center;
+        }
+
+        li a:hover {
+            background-color: #cb202d;
+            color: white;
+        }
+
+        li a.active {
+            background-color: #f4f4f2;
+            color: white;
+        }
+
+        .mainImg {
+            margin-left: 10%;
+        }
+
+        .mainText {
+            text-align: center;
+            font-family: "Playwrite IT Moderna", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            color: #e3c937;
+        }
+
+        .spec {
+            font-family: "Playwrite IT Moderna", cursive;
+            padding: 10px;
+            color: #e3c937;
+        }
+        .menu{
+            list-style-type: none;
+            font-family: "Playwrite IT Moderna", cursive;
+            color: #e3c937;
+        }
+        .container {
+            display: flex;
+            height: 380px;
+        }
+
+        .card {
+            margin: 70px;
+            width: 200px;
+            height: 300px;
+            /* background-color: white; */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover~.card {
+            left: 50px;
+        }
+        video{
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="ulnavBar">
+            <li><a class="navBar" href="">Home</a></li>
+            <li><a class="navBar" href="">Gallery</a></li>
+            <li><a class="navBar" href="">Reviews</a></li>
+            <li><a class="navBar" href="">Contact</a></li>
+            <li><a class="navBar" href="">About Us</a></li>
+        </ul>
+    </div>
+    <div>
+        <img class="mainImg" src="restaurantMain.jpg" alt="">
+        <hr>
+        <h1 class="mainText">Mast Malvani</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <h4 class="spec">Our Specialities:</h4>
+        <div class="card"><video src="resVideo1.webm"></video></div>
+        <div class="card"><video src="resVideo2.mp4"></video></div>
+        <div class="card"><video src="resVideo3.mp4"></video></div>
+        <div class="card"><video src="resVideo4.mp4"></video></div>
+    </div>
+    <hr>
+    <div>
+        <ul class="menu">
+            <li><b>-Fish:</b></li>
+            <li>Pomfret Masala 300/-</li>
+            <li>Surmai Masala 290/-</li>
+            <li>Prawns Masala 230/-</li>
+            <li>Crab Masala 300/-</li>
+            <li>Tisrya Masala 250/-</li>
+            <li>Prawns Dry 270/-</li>
+            <li>Bangda Masala 220/-</li>
+        </ul>
+        <ul class="menu">
+            <li><b>-Tawa Fry:</b></li>
+            <li>Pomfret 270/-</li>
+            <li>Bangda 150/-</li>
+            <li>Bombil 160/-</li>
+            <li>Surmai 250/-</li>
+            <li>Prawns 240/-</li>
+            <li>Halwa Fry 240/-</li>
+            <li>Mandeli Fry 160/-</li>
+        </ul>
+        <ul class="menu">
+            <li><b>-Gravy:</b></li>
+            <li>Chicken Masala/Suka 170/- 200/-</li>
+            <li>Mutton Masala/Suka  200/- 220/-</li>
+            <li>Mutton Kheema Masala 240/-</li>
+            <li>Chicken Kaleji Masala 230/-</li>
+            <li>Gawti Chicken 300/-</li>
+            <li>Egg Masala 100/-</li>
+            <li>Bheja Fry(Dry) 250/-</li>
+        </ul>
+        <ul class="menu">
+            <li><b>-Non-Veg Thali:</b></li>
+            <li>Chicken Thali/Suka 200/- 220/-</li>
+            <li>Mutton Thali/Suka  240/- 260/-</li>
+            <li>Mutton Kheema Thali 270/-</li>
+            <li>Chicken Kaleji Thali 260/-</li>
+            <li>Egg Thali 130/-</li>
+            <li>Gawti Chicken Thali 350/-</li>
+            <li>Bheja Fry Thali 320/-</li>
+            <p>(Chicken, Mutton, Egg(Masala),<br>
+            Chapati-3/Bhakri-1,Rasa, Solkadi, Half Rice)</p>
+        </ul>
+    </div>
+</body>
+
+</html>
